@@ -17,7 +17,7 @@
 
     margin: 0 auto;
 
-    border: 1px solid #3a3a3a;
+    border: 2px solid #3a3a3a;
 
     position: relative;
 
@@ -32,7 +32,7 @@
     position: relative;
     overflow: visible;
     height: 380px;
-    border-right: 1px solid #2d2d2d;
+    border-right: 2px solid #2d2d2d;
     background: #17181d;
 }
 
@@ -98,7 +98,7 @@
 .watermark{
     position: absolute;
 
-    right: 35px;
+    right: 125px;
     bottom: 60px;
 
     z-index: 1;
