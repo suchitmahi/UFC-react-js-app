@@ -1,0 +1,164 @@
+.fight-section{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    width:100%;
+    overflow: visible;
+
+    background:#17181d;
+
+    margin-top:70px;
+}
+
+.fighters-box{
+    width: 70%;
+    height: 175px;
+
+    margin: 0 auto;
+
+    border: 1px solid #3a3a3a;
+
+    position: relative;
+
+    overflow: visible;
+}
+
+
+
+/* CARD */
+
+.fight-card{
+    position: relative;
+    overflow: visible;
+    height: 380px;
+    border-right: 1px solid #2d2d2d;
+    background: #17181d;
+}
+
+/* FIGHTERS */
+
+.fighters{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+.fighter-left,
+.fighter-right{
+
+    position:absolute;
+
+    bottom:0;
+
+    height:210px;
+
+    width:auto;
+}
+
+.fighter-left{
+    left:35%;
+    transform:translateX(-60%);
+}
+
+.fighter-right{
+    right:35%;
+    transform:translateX(60%);
+}
+
+
+/* CONTENT */
+
+.fight-content{
+    padding: 25px 110px;
+    position: relative;
+    z-index: 2;
+}
+
+.label{
+    color:#8f949d;
+    font-size:13px;
+    letter-spacing:3px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.title-name{
+    color:white;
+    font-size:25px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* WATERMARK */
+
+.watermark{
+    position: absolute;
+
+    right: 35px;
+    bottom: 60px;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.watermark img{
+    width: 150px;     /* adjust */
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .fight-section{
+
+        grid-template-columns:1fr;
+    }
+
+    .fight-card{
+
+        border-right:none;
+
+        border-bottom:1px solid #2d2d2d;
+    }
+
+    .fight-card:last-child{
+
+        border-bottom:none;
+    }
+
+    .fighter{
+
+        height:210px;
+    }
+
+    .fighter.left{
+
+        left:8%;
+    }
+
+    .fighter.right{
+
+        right:8%;
+    }
+
+    .fight-content h2{
+
+        font-size:38px;
+
+        line-height:42px;
+    }
+
+    .watermark{
+
+        font-size:60px;
+    }
+
+}

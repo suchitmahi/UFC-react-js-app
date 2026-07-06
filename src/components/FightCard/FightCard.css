@@ -1,0 +1,21 @@
+.fight-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 5rem auto;
+}
+.fight-section{
+    position: relative;
+}
+
+.fight-section::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:30px;
+    transform:translateX(-50%);
+    width:1px;
+    height:85%;
+    background:#3a3a3a;
+}
