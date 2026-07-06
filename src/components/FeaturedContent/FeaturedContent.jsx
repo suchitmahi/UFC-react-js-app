@@ -1,5 +1,6 @@
 import "./FeaturedContent.css";
 import ConorMaxInterview from "../../assets/images/ConorMaxInterview.png";
+import { InstagramEmbed } from "react-social-media-embed";
 
 const FeaturedContent = () => {
     return (
@@ -25,27 +26,26 @@ const FeaturedContent = () => {
                         </p>
 
                         <p className="Interview-title">
-                            Conor McGregor and Max Holloway Meet Again | UFC 329 Interview
+                            Conor McGregor and Max Holloway Meet Again<br/> UFC 329 Interview
                         </p>
 
                     </div>
 
                 </div>
 
-                <div className="featured-side">
+                <div className="featured-sidebar">
 
-                    <h4>Latest Posts</h4>
+                    <div className="instagram-card">
 
-                    <div className="social-card">
-                        UFC 330 Tickets Available
-                    </div>
+                        <p className="sidebar-title">
+                            UFC 329 Tickets Now Available!
+                        </p>
 
-                    <div className="social-card">
-                        Countdown to UFC 330
-                    </div>
+                        <InstagramEmbed
+                            url="https://www.instagram.com/p/DabOzwjEi19/"
+                            width="100%"
+                        />
 
-                    <div className="social-card">
-                        Behind The Scenes
                     </div>
 
                 </div>

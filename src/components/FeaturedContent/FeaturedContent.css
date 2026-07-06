@@ -8,13 +8,11 @@
 
 .section-title{
 
-    font-size:56px;
+    font-size:55px;
 
     font-weight:900;
 
-    letter-spacing:2px;
-
-    margin-bottom:40px;
+    margin-bottom:35px;
 }
 
 .featured-grid{
@@ -24,7 +22,11 @@
     grid-template-columns:2fr 1fr;
 
     gap:40px;
+
+    align-items:start;
 }
+
+/* LEFT */
 
 .featured-main{
 
@@ -42,12 +44,12 @@
 
 .featured-info{
 
-    padding:30px;
+    padding:25px;
 }
 
 .featured-label{
 
-    color:#888;
+    color:#777;
 
     font-size:13px;
 
@@ -56,40 +58,52 @@
     margin-bottom:15px;
 }
 
-.featured-info h3{
+.Interview-title{
 
-    font-size:42px;
+    font-size: 35px;
 
-    color:#d40000;
+    color: black;
 
-    line-height:1.1;
+    font-weight: 500;
 
-    font-weight:900;
+    line-height: 1.1;
 }
 
-.featured-side{
+/* RIGHT */
 
-    display:flex;
+.featured-sidebar{
 
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 
-    gap:20px;
+    gap: 20px;
+
+    align-items: flex-start;
 }
+.instagram-card{
 
-.social-card{
+    width:380px;
 
     background:white;
 
-    padding:25px;
+    border-radius:10px;
 
-    min-height:120px;
+    padding:18px;
 
-    border-radius:8px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 
-    transition:.3s;
+    overflow:hidden;
+    margin-left: auto;
+}
+.instagram-card iframe{
+
+    width:100% !important;
 }
 
-.social-card:hover{
-
-    transform:translateY(-4px);
+.sidebar-title{
+    font-size: 22px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    margin-bottom: 48px;
 }
